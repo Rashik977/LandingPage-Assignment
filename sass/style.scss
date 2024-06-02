@@ -242,6 +242,28 @@ h2 {
     width: 100%;
     border: 1px solid $hr-color;
   }
+  &__image {
+    position: relative;
+  }
+}
+
+.circle {
+  position: absolute;
+  z-index: -10;
+  top: -15px;
+  left: -15px;
+  width: 68px;
+  height: 68px;
+  border-radius: 71px;
+  background: #fff;
+  box-shadow: 3px 2px 24px 0px rgba(0, 0, 0, 0.09);
+}
+
+.github-behind {
+  position: absolute;
+  z-index: -15;
+  top: 0;
+  left: 40px;
 }
 
 .footer {
