@@ -1,7 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// font variables
+$btn-font: "Roboto", sans-serif;
+$main-font: "Montserrat", sans-serif;
+
+// color variables
+$main-bg-color: #f4f6fb;
+$footer-bg-color: #f4f6fb;
+$btn-secondary-color: #f2f2f7;
+$btn-primary-color: #3040e5;
+
+// mixins
+@mixin font-maker($font-size, $font-weight, $line-height) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+// global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  font-family: $main-font;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+// button styles
+.btn {
+  font-family: $btn-font;
+  @include font-maker(14px, 400, 146.687%);
+  letter-spacing: 0.77px;
+  text-align: center;
+  background-color: $btn-primary-color;
+  padding: 10px 40px;
+  border: none;
+  color: white;
+  border-radius: 43px;
+  cursor: pointer;
+
+  &--download {
+    padding: 0;
+    color: black;
+    background-color: transparent;
+    &::before {
+      content: url("../assets/download.png");
+      margin-right: 4px;
+    }
+  }
+}
+
+// header styles
+.header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 24px 146px;
+
+  &__logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__logo-text {
+    @include font-maker(22px, 600, 36px);
+  }
+}
+
+// nav styles
+.nav {
+  display: flex;
+  gap: 56px;
+
+  &__item {
+    @include font-maker(16px, 500, 36px);
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+  }
+}
+
+// hero styles
+.profile {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 302px 158px 302px;
   align-items: center;
-  height: 100vh;
-  background-color: #f1f1f1;
+  gap: 56px;
+
+  &__details,
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__details {
+    gap: 16px;
+  }
+  &__name {
+    @include font-maker(24px, 500, 146.687%);
+    text-align: center;
+  }
+  &__title {
+    @include font-maker(60px, 800, 142.687%);
+    text-align: center;
+    letter-spacing: 3.6px;
+  }
+  &__text-container {
+    width: 85.42%;
+    margin: auto;
+  }
+  &__text {
+    @include font-maker(18px, 500, 192%);
+    text-align: center;
+  }
+  &__btn-container {
+    display: flex;
+    gap: 29px;
+  }
 }
