@@ -73,13 +73,17 @@ h2 {
   display: flex;
   gap: 56px;
 }
-.nav__item {
+.nav__item, .nav__toggle {
   font-size: 16px;
   font-weight: 500;
   line-height: 36px;
   color: #000;
   text-decoration: none;
   list-style: none;
+}
+.nav__menu {
+  background-color: #f2f2f7;
+  color: #000;
 }
 
 .profile {
@@ -277,6 +281,43 @@ h2 {
   font-weight: 400;
   line-height: 172.687%;
   letter-spacing: 0.18px;
+}
+
+@media (min-width: 851px) {
+  .nav__menu {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .header {
+    padding: 24px;
+  }
+  .header__logo-text {
+    display: none;
+  }
+  .apps {
+    padding: 0;
+    gap: 0;
+  }
+  .nav__item {
+    display: none;
+  }
+  .app {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .tools-container {
+    padding: 49px 100px;
+  }
+  .tools {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -93,11 +93,16 @@ h2 {
   display: flex;
   gap: 56px;
 
-  &__item {
+  &__item,
+  &__toggle {
     @include font-maker(16px, 500, 36px);
     color: #000;
     text-decoration: none;
     list-style: none;
+  }
+  &__menu {
+    background-color: $btn-secondary-color;
+    color: #000;
   }
 }
 
@@ -287,5 +292,47 @@ h2 {
   &__text {
     @include font-maker(16px, 400, 172.687%);
     letter-spacing: 0.18px;
+  }
+}
+
+// media queries
+
+@media (min-width: 851px) {
+  .nav__menu {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .header {
+    padding: 24px;
+    &__logo-text {
+      display: none;
+    }
+  }
+  .apps {
+    padding: 0;
+    gap: 0;
+  }
+
+  .nav__item {
+    display: none;
+  }
+
+  .app {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .tools-container {
+    padding: 49px 100px;
+  }
+  .tools {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 100px;
   }
 }
