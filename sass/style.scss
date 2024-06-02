@@ -10,6 +10,7 @@ $main-bg-color: #f4f6fb;
 $footer-bg-color: #f4f6fb;
 $btn-secondary-color: #f2f2f7;
 $btn-primary-color: #3040e5;
+$hr-color: #dedede;
 
 // mixins
 @mixin font-maker($font-size, $font-weight, $line-height) {
@@ -34,6 +35,13 @@ h1 {
   font-size: 36px;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 172.687%; /* 41.445px */
+  letter-spacing: 0.12px;
+}
+
 // button styles
 .btn {
   font-family: $btn-font;
@@ -54,6 +62,13 @@ h1 {
     padding: 0;
     color: black;
     background-color: transparent;
+  }
+
+  &--secondary {
+    @include font-maker(15px, 500, 146.687%);
+    background-color: $btn-secondary-color;
+    width: 100%;
+    color: #000;
   }
 }
 
@@ -186,5 +201,69 @@ h1 {
   &__text {
     @include font-maker(18px, 500, 190.4%);
     letter-spacing: 0.09px;
+  }
+}
+
+.tools-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
+  padding: 49px 146px;
+  &__title {
+    padding-bottom: 16px;
+  }
+}
+
+.tools-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+}
+
+.tools {
+  display: flex;
+  gap: 62px;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 30px;
+  &__text {
+    @include font-maker(16px, 500, 190.4%);
+    letter-spacing: 0.08px;
+  }
+  &__divider {
+    width: 100%;
+    border: 1px solid $hr-color;
+  }
+}
+
+.footer {
+  background-color: $footer-bg-color;
+  padding: 40px 151px;
+  display: flex;
+  justify-content: space-between;
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__left {
+    gap: 26px;
+  }
+  &__title {
+    @include font-maker(40px, 700, 172.687%);
+    letter-spacing: 0.2px;
+  }
+  &__text {
+    @include font-maker(16px, 400, 172.687%);
+    letter-spacing: 0.18px;
   }
 }

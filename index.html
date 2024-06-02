@@ -27,6 +27,7 @@
       </nav>
     </header>
     <main>
+      <!-- profile section -->
       <section class="profile">
         <div class="profile__details">
           <img src="./assets/PP-image.png" alt="profile-image" />
@@ -59,7 +60,7 @@
           </div>
         </div>
       </section>
-
+      <!-- apps section -->
       <section class="apps">
         <!-- first App -->
         <div class="app">
@@ -159,83 +160,88 @@
         </div>
       </section>
 
-      <section>
-        <h1>Applications and Tools</h1>
-        <div>
-          <div>
-            <div>
+      <!-- Application and tools section -->
+      <section class="tools-container">
+        <h1 class="tools-container__title">Applications and Tools</h1>
+        <div class="tools-wrapper">
+          <div class="tools">
+            <div class="tool">
               <img src="./assets/figma-big.png" alt="figma" />
               <h2>Figma</h2>
-              <p>
+              <p class="tool__text">
                 My primary design tool right now. Saya memilih mengunakan figma
                 karena dapat bekerja dengan Tim.
               </p>
             </div>
-            <div>
+            <div class="tool">
               <img src="./assets/whimsical-big.png" alt="whimsical" />
               <h2>Whimsicle</h2>
-              <p>
+              <p class="tool__text">
                 My primary design tool right now. Saya memilih mengunakan figma
                 karena dapat bekerja dengan Tim.
               </p>
             </div>
-            <div>
+            <div class="tool">
               <img src="./assets/invision-big.png" alt="invision" />
               <h2>Invision</h2>
-              <p>
+              <p class="tool__text">
                 My primary design tool right now. Saya memilih mengunakan figma
                 karena dapat bekerja dengan Tim.
               </p>
             </div>
           </div>
-          <hr />
-          <div>
-            <div>
+          <hr class="tools__divider" />
+          <div class="tools">
+            <div class="tool">
               <img src="./assets/flutter-big.png" alt="flutter" />
               <h2>Flutter</h2>
-              <p>
+              <p class="tool__text">
                 My primary design tool right now. Saya memilih mengunakan figma
                 karena dapat bekerja dengan Tim.
               </p>
             </div>
-            <div>
+            <div class="tool">
               <img src="./assets/vscode-big.png" alt="VScode" />
               <h2>VS Code</h2>
-              <p>
+              <p class="tool__text">
                 My primary design tool right now. Saya memilih mengunakan figma
                 karena dapat bekerja dengan Tim.
               </p>
             </div>
-            <div>
+            <div class="tool">
               <img src="./assets/git-fox.png" alt="git-fox" />
-              <img src="./assets/github-big.png" alt="github" />
+              <!-- <img src="./assets/github-big.png" alt="github" /> -->
               <h2>Git</h2>
-              <p>
+              <p class="tool__text">
                 My primary design tool right now. Saya memilih mengunakan figma
                 karena dapat bekerja dengan Tim.
               </p>
             </div>
           </div>
         </div>
-        <button>Load More Applications and Tools</button>
+        <button class="btn btn--secondary">
+          Load More Applications and Tools
+        </button>
       </section>
     </main>
-    <footer>
-      <div>
-        <h1>Let's get in touch</h1>
-        <p>
-          For business inquiry please send email to
-          nanangprasetya.2000@gmail.com
-        </p>
+    <footer class="footer">
+      <div class="footer__left">
         <div>
+          <h1 class="footer__title">Let's get in touch</h1>
+          <p class="footer__text">
+            For business inquiry please send email to
+            nanangprasetya.2000@gmail.com
+          </p>
+        </div>
+        <div class="icons">
           <img src="./assets/linkedin.png" alt="linkedin" />
           <img src="./assets/instagram.png" alt="instagram" />
           <img src="./assets/dribble.png" alt="dribble" />
           <img src="./assets/github.png" alt="github" />
         </div>
       </div>
-      <div>
-        <button>SAY HELLO</button>
+      <div class="footer__right">
+        <button class="btn">SAY HELLO</button>
       </div>
     </footer>
   </body>
