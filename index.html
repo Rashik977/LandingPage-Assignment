@@ -7,6 +7,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- header section -->
     <header class="header">
       <figure class="header__logo-container">
         <img
@@ -17,22 +18,21 @@
         <p class="header__logo-text">BISCUIT</p>
       </figure>
 
+      <!-- navigation section -->
       <nav>
         <ul class="nav">
           <li class="nav__item">Home</li>
           <li class="nav__item">Work</li>
           <li class="nav__item">Contact</li>
           <li class="nav__toggle">
-            <img
-              src="./assets/light.png"
-              alt="theme"
-              class="nav__toggle-icon"
-            />
+            <img src="./assets/dark.png" alt="theme" class="nav__toggle-icon" />
           </li>
           <button class="btn nav__menu">MENU</button>
         </ul>
       </nav>
     </header>
+
+    <!-- main content of the page -->
     <main>
       <!-- profile section -->
       <section class="profile-container">
@@ -56,14 +56,18 @@
             <div class="profile__btn-container">
               <button class="btn">SAY HELLO</button>
               <button class="btn btn--download">
-                <img src="./assets/download.png" alt="download" />
+                <img
+                  src="./assets/download.png"
+                  alt="download"
+                  class="icons icons--filter"
+                />
                 <p>Download CV</p>
               </button>
             </div>
           </div>
         </div>
         <div class="icons-container">
-          <div class="icons">
+          <div class="icons icons--filter">
             <img src="./assets/linkedin.png" alt="linkedin" />
             <img src="./assets/instagram.png" alt="instagram" />
             <img src="./assets/dribble.png" alt="dribble" />
@@ -71,6 +75,7 @@
           </div>
         </div>
       </section>
+
       <!-- apps section -->
       <section class="apps">
         <!-- first App -->
@@ -190,7 +195,11 @@
           <div class="tools">
             <div class="tool">
               <div class="tool__image">
-                <img src="./assets/figma-big.png" alt="figma" />
+                <img
+                  src="./assets/figma-big.png"
+                  alt="figma"
+                  class="big-image"
+                />
                 <div class="circle"></div>
               </div>
               <h2>Figma</h2>
@@ -273,6 +282,7 @@
         </button>
       </section>
     </main>
+
     <!-- footer section -->
     <footer class="footer">
       <div class="footer__up">
@@ -288,7 +298,7 @@
         </div>
       </div>
 
-      <div class="icons">
+      <div class="icons icons--filter">
         <img src="./assets/linkedin.png" alt="linkedin" />
         <img src="./assets/instagram.png" alt="instagram" />
         <img src="./assets/dribble.png" alt="dribble" />

@@ -1,0 +1,194 @@
+// media queries
+
+@media (min-width: 1129px) {
+  .nav__menu {
+    display: none;
+  }
+
+  .tools__divider--lg {
+    display: none;
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1128px) {
+  .nav__menu {
+    display: none;
+  }
+
+  .tools__divider--lg {
+    display: none;
+  }
+  .app {
+    position: relative;
+    flex-direction: column-reverse;
+    gap: 0px;
+    &__image {
+      height: 55vh;
+    }
+    &__category {
+      top: 20px;
+      left: 30px;
+      position: absolute;
+    }
+    &__text {
+      @include font-maker(14px, 500, 190.4%);
+    }
+    &__details {
+      align-items: center;
+      padding: 36px 24px 126px 24px;
+      gap: 42px;
+    }
+    &__header {
+      align-self: start;
+    }
+  }
+  .footer {
+    &__up {
+      flex-direction: column;
+      align-items: start;
+    }
+    &__title {
+      @include font-maker(24px, 800, 142.687%);
+      letter-spacing: 0.96px;
+    }
+    &__text {
+      @include font-maker(14px, 500, 190.4%);
+      letter-spacing: 0.14px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .btn {
+    &--secondary {
+      @include font-maker(14px, 500, 146.687%);
+      letter-spacing: 0.07px;
+    }
+  }
+  h1 {
+    @include font-maker(24px, 700, 172.687%);
+    letter-spacing: 0.12px;
+  }
+  h2 {
+    @include font-maker(20px, 700, 172.687%);
+  }
+  .header {
+    padding: 12px 24px;
+    &__logo-text {
+      display: none;
+    }
+  }
+  .nav {
+    gap: 24px;
+  }
+  .nav__item {
+    display: none;
+  }
+
+  .icons--widthmax {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .profile-container {
+    height: 100vh;
+    padding: 40px 0px 24px 0px;
+    gap: 122px;
+    justify-content: center;
+  }
+
+  .profile {
+    @include flex(column, baseline, center);
+    padding: 10px 24px;
+    gap: 56px;
+    &__details {
+      gap: 16px;
+    }
+    &__name {
+      @include font-maker(16px, 500, 146.687%);
+      letter-spacing: 0.08px;
+      text-align: center;
+    }
+    &__title {
+      @include font-maker(24px, 800, 142.687%);
+      text-align: center;
+      letter-spacing: 0.96px;
+    }
+    &__text-container {
+      width: 100%;
+    }
+    &__text {
+      @include font-maker(14px, 500, 190%);
+      text-align: center;
+    }
+    &__btn-container {
+      @include flex(column, baseline, center);
+      gap: 27px;
+    }
+  }
+
+  .apps {
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .app {
+    position: relative;
+    flex-direction: column-reverse;
+    gap: 0px;
+    &__image {
+      height: 55vh;
+    }
+    &__category {
+      top: 20px;
+      left: 30px;
+      position: absolute;
+    }
+    &__text {
+      @include font-maker(14px, 500, 190.4%);
+    }
+    &__details {
+      align-items: center;
+      padding: 36px 24px 126px 24px;
+      gap: 42px;
+    }
+    &__header {
+      align-self: start;
+    }
+  }
+
+  .tools-container {
+    padding: 35px 24px;
+    &__title {
+      @include font-maker(24px, 800, 142.687%);
+      letter-spacing: 0.96px;
+    }
+  }
+  .tools {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .tool {
+    &__text {
+      @include font-maker(14px, 500, 190.4%);
+      letter-spacing: 0.07px;
+    }
+  }
+  .footer {
+    gap: 40px;
+    padding: 26px 24px;
+    &__up {
+      flex-direction: column;
+      align-items: start;
+    }
+    &__title {
+      @include font-maker(24px, 800, 142.687%);
+      letter-spacing: 0.96px;
+    }
+    &__text {
+      @include font-maker(14px, 500, 190.4%);
+      letter-spacing: 0.14px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+:root {
+  --text-color: #000;
+  --profile-color: white;
+  --main-bg-color: #f4f6fb;
+  --footer-bg-color: #f4f6fb;
+  --btn-secondary-color: #f2f2f7;
+  --btn-primary-color: #3040e5;
+  --hr-color: #dedede;
+  --primary-theme-color: white;
+  --link-color: #3040e5;
+  --btn-seconday-text: #000;
+  --icons-color: #000;
+  --icons-color: brightness(0) invert(0);
+
+  --btn-font: "Roboto", sans-serif;
+  --main-font: "Montserrat", sans-serif;
+}
+
+.dark-mode {
+  --icons-color: white;
+  --primary-theme-color: #050519;
+  --text-color: white;
+  --profile-color: black;
+  --main-bg-color: linear-gradient(
+    172.33deg,
+    #30303a -1.75%,
+    #20202e 83.53%,
+    #050519 104.9%
+  );
+
+  --footer-bg-color: #282c34;
+  --btn-secondary-color: #282c34;
+  --btn-seconday-text: white;
+  --btn-primary-color: #3040e5;
+  --hr-color: #dedede;
+  --link-color: white;
+  --icons-color: brightness(0) invert(1);
+}

@@ -1,0 +1,62 @@
+// tools styles
+.tools-container {
+  background-color: var(--primary-theme-color);
+  @include flex(column, center, center);
+  gap: 46px;
+  padding: 49px 146px;
+  &__title {
+    padding-bottom: 16px;
+  }
+}
+
+.tools-wrapper {
+  width: 100%;
+  @include flex(column, baseline, baseline);
+  gap: 43px;
+}
+
+.tools {
+  display: flex;
+  gap: 62px;
+  padding: 0px 24px;
+}
+
+.tool {
+  @include flex(column, baseline, baseline);
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 30px;
+  &__text {
+    @include font-maker(16px, 500, 190.4%);
+    letter-spacing: 0.08px;
+  }
+  &__divider {
+    width: 100%;
+    border: 1px solid var(--hr-color);
+  }
+  &__image {
+    padding: 10px 0px 10px 7px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.circle {
+  position: absolute;
+  z-index: -10;
+  top: -5px;
+  left: -8px;
+  width: 68px;
+  height: 68px;
+  border-radius: 71px;
+  background: #fff;
+  box-shadow: 3px 2px 24px 0px rgba(0, 0, 0, 0.09);
+}
+
+.github-behind {
+  filter: var(--icons-color);
+  position: absolute;
+  z-index: -15;
+  top: 0;
+  left: 40px;
+}

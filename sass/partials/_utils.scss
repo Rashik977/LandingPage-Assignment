@@ -1,0 +1,48 @@
+//image styles
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// button styles
+.btn {
+  font-family: var(--btn-font);
+  @include font-maker(14px, 400, 146.687%);
+  letter-spacing: 0.77px;
+  text-align: center;
+  background-color: var(--btn-primary-color);
+  padding: 10px 40px;
+  border: none;
+  color: white;
+  border-radius: 43px;
+  cursor: pointer;
+
+  &--download {
+    @include flex(row, baseline, center);
+    gap: 4px;
+    padding: 0;
+    color: var(--btn-secondary-text);
+    background-color: transparent;
+  }
+
+  &--secondary {
+    @include font-maker(15px, 500, 146.687%);
+    background-color: var(--btn-secondary-color);
+    width: 100%;
+    color: var(--btn-seconday-text);
+  }
+}
+
+// icons styles
+.icons-container {
+  @include flex(row, center, baseline);
+}
+
+.icons {
+  @include flex(row, baseline, center);
+  gap: 40px;
+  &--filter {
+    filter: var(--icons-color);
+  }
+}

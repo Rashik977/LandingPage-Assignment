@@ -1,0 +1,30 @@
+// global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: 1s;
+  color: var(--text-color);
+  background-color: var(--profile-color);
+  font-family: var(--main-font);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 172.687%; /* 41.445px */
+  letter-spacing: 0.12px;
+}
+
+a {
+  transition: 1s;
+  color: var(--link-color);
+}

@@ -1,0 +1,44 @@
+//profile styles
+.profile-container {
+  overflow: hidden;
+  background-color: var(--primary-theme-color);
+  display: flex;
+  flex-direction: column;
+  padding: 70px 302px 158px 302px;
+  gap: 24px;
+}
+
+.profile {
+  @include flex(column, baseline, center);
+  gap: 56px;
+
+  &__details,
+  &__links {
+    @include flex(column, center, center);
+    gap: 40px;
+  }
+  &__details {
+    gap: 16px;
+  }
+  &__name {
+    @include font-maker(24px, 500, 146.687%);
+    text-align: center;
+  }
+  &__title {
+    @include font-maker(60px, 800, 142.687%);
+    text-align: center;
+    letter-spacing: 3.6px;
+  }
+  &__text-container {
+    width: 85.42%;
+    margin: auto;
+  }
+  &__text {
+    @include font-maker(18px, 500, 192%);
+    text-align: center;
+  }
+  &__btn-container {
+    display: flex;
+    gap: 29px;
+  }
+}

@@ -1,0 +1,22 @@
+// footer styles
+.footer {
+  background-color: var(--footer-bg-color);
+  padding: 40px 151px;
+  @include flex(column, space-between, baseline);
+  gap: 24px;
+  &__left {
+    @include flex(column, center, baseline);
+  }
+  &__up {
+    @include flex(row, space-between, center);
+    gap: 40px;
+  }
+  &__title {
+    @include font-maker(40px, 700, 172.687%);
+    letter-spacing: 0.2px;
+  }
+  &__text {
+    @include font-maker(16px, 400, 172.687%);
+    letter-spacing: 0.18px;
+  }
+}

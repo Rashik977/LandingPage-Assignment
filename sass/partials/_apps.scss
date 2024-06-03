@@ -1,0 +1,52 @@
+// apps styles
+.apps {
+  padding: 81px 146px;
+  background: var(--main-bg-color);
+  @include flex(column, baseline, baseline);
+  gap: 162px;
+}
+
+.app {
+  display: flex;
+  background-color: var(--primary-theme-color);
+  gap: 72px;
+  &__details {
+    @include flex(column, center, baseline);
+    padding: 15px 80px 15px 80px;
+    gap: 42px;
+  }
+
+  &__header {
+    @include flex(column, center, baseline);
+    gap: 16px;
+  }
+
+  &__category,
+  &__title {
+    @include flex(row, baseline, center);
+  }
+
+  &__category {
+    gap: 7px;
+    padding: 8px 24px;
+    background-color: var(--btn-secondary-color);
+    border-radius: 43px;
+    align-self: flex-start;
+    @include font-maker(14px, 500, 172.687%);
+    letter-spacing: 0.21px;
+  }
+
+  &__title {
+    @include font-maker(36px, 700, 172.687%);
+    letter-spacing: 0.18px;
+    gap: 24px;
+  }
+
+  &__text {
+    @include font-maker(18px, 500, 190.4%);
+    letter-spacing: 0.09px;
+  }
+  &__image {
+    width: 100%;
+  }
+}

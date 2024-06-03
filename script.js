@@ -5,10 +5,10 @@ const toggle_icon = document.querySelector(".nav__toggle-icon");
 toggle.addEventListener("click", () => {
   console.log("clicked");
   if (body.classList.length) {
-    toggle_icon.src = "./assets/light.png";
+    toggle_icon.src = "./assets/dark.png";
     body.classList.remove("dark-mode");
   } else {
-    toggle_icon.src = "./assets/dark.png";
+    toggle_icon.src = "./assets/light.png";
     body.classList.add("dark-mode");
   }
 });

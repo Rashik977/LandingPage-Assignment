@@ -1,0 +1,38 @@
+// header styles
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 146px;
+
+  &__logo-container {
+    @include flex(row, baseline, center);
+    gap: 12px;
+  }
+  &__logo-text {
+    @include font-maker(22px, 600, 36px);
+  }
+}
+
+// nav styles
+.nav {
+  display: flex;
+  gap: 56px;
+
+  &__item,
+  &__toggle {
+    display: flex;
+    @include font-maker(16px, 500, 36px);
+    color: --text-color;
+    text-decoration: none;
+    list-style: none;
+  }
+  &__toogle-icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__menu {
+    background-color: var(--btn-secondary-color);
+    color: var(--btn-seconday-text);
+  }
+}
