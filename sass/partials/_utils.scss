@@ -46,3 +46,16 @@
     filter: var(--icons-color);
   }
 }
+
+// circle
+.circle {
+  position: absolute;
+  z-index: -10;
+  top: -4px;
+  left: -7px;
+  width: 68px;
+  height: 68px;
+  border-radius: 71px;
+  background: #fff;
+  box-shadow: 3px 2px 24px 0px rgba(0, 0, 0, 0.09);
+}

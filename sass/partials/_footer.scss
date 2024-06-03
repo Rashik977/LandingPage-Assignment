@@ -2,13 +2,19 @@
 .footer {
   background-color: var(--footer-bg-color);
   padding: 40px 151px;
-  @include flex(column, space-between, baseline);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   gap: 24px;
   &__left {
-    @include flex(column, center, baseline);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   &__up {
-    @include flex(row, space-between, center);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 40px;
   }
   &__title {

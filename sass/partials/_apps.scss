@@ -37,6 +37,8 @@
   }
 
   &__title {
+    position: relative;
+    z-index: 1;
     @include font-maker(36px, 700, 172.687%);
     letter-spacing: 0.18px;
     gap: 24px;

@@ -124,6 +124,18 @@ a {
   filter: var(--icons-color);
 }
 
+.circle {
+  position: absolute;
+  z-index: -10;
+  top: -4px;
+  left: -7px;
+  width: 68px;
+  height: 68px;
+  border-radius: 71px;
+  background: #fff;
+  box-shadow: 3px 2px 24px 0px rgba(0, 0, 0, 0.09);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -266,6 +278,8 @@ a {
   letter-spacing: 0.21px;
 }
 .app__title {
+  position: relative;
+  z-index: 1;
   font-size: 36px;
   font-weight: 700;
   line-height: 172.687%;
@@ -309,6 +323,10 @@ a {
   gap: 62px;
   padding: 0px 24px;
 }
+.tools__divider {
+  width: 100%;
+  border: 1px solid var(--hr-color);
+}
 
 .tool {
   display: flex;
@@ -335,18 +353,6 @@ a {
   z-index: 1;
 }
 
-.circle {
-  position: absolute;
-  z-index: -10;
-  top: -5px;
-  left: -8px;
-  width: 68px;
-  height: 68px;
-  border-radius: 71px;
-  background: #fff;
-  box-shadow: 3px 2px 24px 0px rgba(0, 0, 0, 0.09);
-}
-
 .github-behind {
   filter: var(--icons-color);
   position: absolute;
@@ -361,18 +367,15 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: baseline;
   gap: 24px;
 }
 .footer__left {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: baseline;
 }
 .footer__up {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
