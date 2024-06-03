@@ -22,37 +22,47 @@
           <li class="nav__item">Home</li>
           <li class="nav__item">Work</li>
           <li class="nav__item">Contact</li>
-          <li class="nav__toggle">🌝</li>
+          <li class="nav__toggle">
+            <img
+              src="./assets/light.png"
+              alt="theme"
+              class="nav__toggle-icon"
+            />
+          </li>
           <button class="btn nav__menu">MENU</button>
         </ul>
       </nav>
     </header>
     <main>
       <!-- profile section -->
-      <section class="profile">
-        <div class="profile__details">
-          <img src="./assets/PP-image.png" alt="profile-image" />
-          <h3 class="profile__name">Hi, I’m Nanang Prasetya</h3>
-          <h1 class="profile__title">
-            UI/UX Designer and Software Development
-          </h1>
-          <div class="profile__text-container">
-            <p class="profile__text">
-              I’m from Indonesia and I have been working (Freelance) as a
-              Software Development especially in the UI/UX Designer and
-              Development for more than 2 year at
-              <span><a href="#">Panemu Indonesia</a></span> company.
-            </p>
+      <section class="profile-container">
+        <div class="profile">
+          <div class="profile__details">
+            <img src="./assets/PP-image.png" alt="profile-image" />
+            <h3 class="profile__name">Hi, I’m Nanang Prasetya</h3>
+            <h1 class="profile__title">
+              UI/UX Designer and Software Development
+            </h1>
+            <div class="profile__text-container">
+              <p class="profile__text">
+                I’m from Indonesia and I have been working (Freelance) as a
+                Software Development especially in the UI/UX Designer and
+                Development for more than 2 year at
+                <span><a href="#">Panemu Indonesia</a></span> company.
+              </p>
+            </div>
+          </div>
+          <div class="profile__links">
+            <div class="profile__btn-container">
+              <button class="btn">SAY HELLO</button>
+              <button class="btn btn--download">
+                <img src="./assets/download.png" alt="download" />
+                <p>Download CV</p>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="profile__links">
-          <div class="profile__btn-container">
-            <button class="btn">SAY HELLO</button>
-            <button class="btn btn--download">
-              <img src="./assets/download.png" alt="download" />
-              <p>Download CV</p>
-            </button>
-          </div>
+        <div class="icons-container">
           <div class="icons">
             <img src="./assets/linkedin.png" alt="linkedin" />
             <img src="./assets/instagram.png" alt="instagram" />
@@ -84,7 +94,7 @@
               e-commerce (selling various livestock products) that applies
               business concepts and empowerment of breeders and MSMEs.
             </p>
-            <div class="icons">
+            <div class="icons icons--widthmax">
               <img src="./assets/figma.png" alt="figma" />
               <img src="./assets/whimsical.png" alt="whimsical" />
               <img src="./assets/invision.png" alt="invision" />
@@ -95,7 +105,11 @@
             <div><button class="btn">SAY HELLO</button></div>
           </div>
           <figure class="app__image">
-            <img src="./assets/tuku-ternak-image.png" alt="tuku-ternak-image" />
+            <img
+              src="./assets/tuku-ternak-image.png"
+              alt="tuku-ternak-image"
+              class="image"
+            />
           </figure>
         </div>
 
@@ -126,7 +140,11 @@
             <div><button class="btn">SAY HELLO</button></div>
           </div>
           <figure class="app__image">
-            <img src="./assets/event-id-image.png" alt="event-id-image" />
+            <img
+              src="./assets/event-id-image.png"
+              alt="event-id-image"
+              class="image"
+            />
           </figure>
         </div>
 
@@ -156,7 +174,11 @@
             <div><button class="btn">SAY HELLO</button></div>
           </div>
           <figure class="app__image">
-            <img src="./assets/medica-image.png" alt="medica-image" />
+            <img
+              src="./assets/medica-image.png"
+              alt="medica-image"
+              class="image"
+            />
           </figure>
         </div>
       </section>
@@ -177,6 +199,7 @@
                 karena dapat bekerja dengan Tim.
               </p>
             </div>
+            <hr class="tools__divider tools__divider--lg" />
             <div class="tool">
               <div class="tool__image">
                 <img src="./assets/whimsical-big.png" alt="whimsical" />
@@ -188,6 +211,7 @@
                 karena dapat bekerja dengan Tim.
               </p>
             </div>
+            <hr class="tools__divider tools__divider--lg" />
             <div class="tool">
               <div class="tool__image">
                 <img src="./assets/invision-big.png" alt="invision" />
@@ -213,6 +237,7 @@
                 karena dapat bekerja dengan Tim.
               </p>
             </div>
+            <hr class="tools__divider tools__divider--lg" />
             <div class="tool">
               <div class="tool__image">
                 <img src="./assets/vscode-big.png" alt="VScode" />
@@ -224,6 +249,7 @@
                 karena dapat bekerja dengan Tim.
               </p>
             </div>
+            <hr class="tools__divider tools__divider--lg" />
             <div class="tool">
               <div class="tool__image">
                 <img src="./assets/git-fox.png" alt="git-fox" />
@@ -249,24 +275,26 @@
     </main>
     <!-- footer section -->
     <footer class="footer">
-      <div class="footer__left">
-        <div>
+      <div class="footer__up">
+        <div class="footer__left">
           <h1 class="footer__title">Let's get in touch</h1>
           <p class="footer__text">
             For business inquiry please send email to
             nanangprasetya.2000@gmail.com
           </p>
         </div>
-        <div class="icons">
-          <img src="./assets/linkedin.png" alt="linkedin" />
-          <img src="./assets/instagram.png" alt="instagram" />
-          <img src="./assets/dribble.png" alt="dribble" />
-          <img src="./assets/github.png" alt="github" />
+        <div class="footer__right">
+          <button class="btn">SAY HELLO</button>
         </div>
       </div>
-      <div class="footer__right">
-        <button class="btn">SAY HELLO</button>
+
+      <div class="icons">
+        <img src="./assets/linkedin.png" alt="linkedin" />
+        <img src="./assets/instagram.png" alt="instagram" />
+        <img src="./assets/dribble.png" alt="dribble" />
+        <img src="./assets/github.png" alt="github" />
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
