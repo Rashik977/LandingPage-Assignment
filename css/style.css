@@ -159,6 +159,7 @@ a {
   gap: 56px;
 }
 .nav__item, .nav__toggle {
+  cursor: pointer;
   display: flex;
   font-size: 16px;
   font-weight: 500;

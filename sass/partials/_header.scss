@@ -20,6 +20,7 @@
 
   &__item,
   &__toggle {
+    cursor: pointer;
     display: flex;
     @include font-maker(16px, 500, 36px);
     color: --text-color;
