@@ -11,7 +11,7 @@
 
 .tools-wrapper {
   width: 100%;
-  @include flex(column, baseline, baseline);
+  @include flex(column, normal, normal);
   gap: 43px;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .tool {
-  @include flex(column, baseline, baseline);
+  @include flex(column, normal, normal);
   align-items: flex-start;
   gap: 10px;
   padding-bottom: 30px;

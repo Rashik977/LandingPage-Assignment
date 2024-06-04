@@ -2,7 +2,7 @@
 .apps {
   padding: 81px 146px;
   background: var(--main-bg-color);
-  @include flex(column, baseline, baseline);
+  @include flex(column, normal, normal);
   gap: 162px;
 }
 
@@ -11,19 +11,19 @@
   background-color: var(--primary-theme-color);
   gap: 72px;
   &__details {
-    @include flex(column, center, baseline);
+    @include flex(column, center, normal);
     padding: 15px 80px 15px 80px;
     gap: 42px;
   }
 
   &__header {
-    @include flex(column, center, baseline);
+    @include flex(column, center, normal);
     gap: 16px;
   }
 
   &__category,
   &__title {
-    @include flex(row, baseline, center);
+    @include flex(row, normal, center);
   }
 
   &__category {

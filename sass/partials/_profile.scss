@@ -9,7 +9,7 @@
 }
 
 .profile {
-  @include flex(column, baseline, center);
+  @include flex(column, normal, center);
   gap: 56px;
 
   &__details,

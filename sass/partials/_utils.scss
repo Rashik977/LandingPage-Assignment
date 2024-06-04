@@ -19,7 +19,7 @@
   cursor: pointer;
 
   &--download {
-    @include flex(row, baseline, center);
+    @include flex(row, normal, center);
     gap: 4px;
     padding: 0;
     color: var(--btn-secondary-text);
@@ -36,11 +36,11 @@
 
 // icons styles
 .icons-container {
-  @include flex(row, center, baseline);
+  @include flex(row, center, normal);
 }
 
 .icons {
-  @include flex(row, baseline, center);
+  @include flex(row, normal, center);
   gap: 40px;
   &--filter {
     filter: var(--icons-color);

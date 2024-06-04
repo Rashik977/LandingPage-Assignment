@@ -1,6 +1,6 @@
 // media queries
 
-@media (min-width: 1129px) {
+@media (min-width: 1025px) {
   .nav__menu {
     display: none;
   }
@@ -10,20 +10,20 @@
   }
 }
 
-@media (min-width: 851px) and (max-width: 1128px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: 24px 100px;
+  }
   .nav__menu {
     display: none;
   }
 
-  .tools__divider--lg {
-    display: none;
-  }
   .app {
     position: relative;
     flex-direction: column-reverse;
     gap: 0px;
     &__image {
-      height: 55vh;
+      height: 40vh;
     }
     &__category {
       top: 20px;
@@ -42,6 +42,11 @@
       align-self: start;
     }
   }
+
+  .tools__divider--lg {
+    display: none;
+  }
+
   .footer {
     &__up {
       flex-direction: column;
@@ -58,7 +63,114 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (min-width: 481px) and (max-width: 768px) {
+  .header {
+    padding: 12px 10px;
+  }
+  .header__logo-text {
+    display: none;
+  }
+  .nav__menu {
+    display: none;
+  }
+
+  .profile-container {
+    height: 100vh;
+    padding: 40px 0px 24px 0px;
+    gap: 122px;
+    justify-content: center;
+  }
+
+  .profile {
+    @include flex(column, normal, center);
+    padding: 10px 24px;
+    gap: 56px;
+    &__details {
+      gap: 16px;
+    }
+    &__name {
+      @include font-maker(20px, 500, 146.687%);
+      letter-spacing: 0.08px;
+      text-align: center;
+    }
+    &__title {
+      @include font-maker(36px, 800, 142.687%);
+      text-align: center;
+      letter-spacing: 0.96px;
+    }
+    &__text {
+      @include font-maker(18px, 500, 190%);
+      text-align: center;
+    }
+    &__btn-container {
+      @include flex(column, normal, center);
+      gap: 27px;
+    }
+  }
+
+  .apps {
+    padding: 30px 50px;
+  }
+  .app {
+    position: relative;
+    flex-direction: column-reverse;
+    gap: 0px;
+    &__image {
+      height: 40vh;
+    }
+    &__category {
+      top: 20px;
+      left: 30px;
+      position: absolute;
+    }
+    &__text {
+      @include font-maker(14px, 500, 190.4%);
+    }
+    &__details {
+      align-items: center;
+      padding: 36px 24px 126px 24px;
+      gap: 42px;
+    }
+    &__header {
+      align-self: start;
+    }
+  }
+  .tools-container {
+    padding: 35px 24px;
+    &__title {
+      @include font-maker(24px, 800, 142.687%);
+      letter-spacing: 0.96px;
+    }
+  }
+  .tools {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .tool {
+    &__text {
+      @include font-maker(14px, 500, 190.4%);
+      letter-spacing: 0.07px;
+    }
+  }
+  .footer {
+    padding: 35px 24px;
+    &__up {
+      flex-direction: column;
+      align-items: start;
+    }
+    &__title {
+      @include font-maker(24px, 800, 142.687%);
+      letter-spacing: 0.96px;
+    }
+    &__text {
+      @include font-maker(14px, 500, 190.4%);
+      letter-spacing: 0.14px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
   .btn {
     &--secondary {
       @include font-maker(14px, 500, 146.687%);
@@ -98,7 +210,7 @@
   }
 
   .profile {
-    @include flex(column, baseline, center);
+    @include flex(column, normal, center);
     padding: 10px 24px;
     gap: 56px;
     &__details {
@@ -122,7 +234,7 @@
       text-align: center;
     }
     &__btn-container {
-      @include flex(column, baseline, center);
+      @include flex(column, normal, center);
       gap: 27px;
     }
   }
